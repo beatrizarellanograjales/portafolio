@@ -1,5 +1,5 @@
 // Variables
-let maxPossibleNumber = 100;
+let maxPossibleNumber = 10;
 let secretNumber = Math.floor(Math.random() * maxPossibleNumber) + 1;
 let userNumber = 0;
 let attempts = 1;
