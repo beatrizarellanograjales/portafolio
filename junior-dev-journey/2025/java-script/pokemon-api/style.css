@@ -1,3 +1,4 @@
+/*  Import RUBY family Type Font */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
@@ -43,11 +44,11 @@ button {
     border-radius: 0;
 }
 
-/* Aquí todo el CSS extra */
+/* star the CSS extra */
 
 
 
-/* Aquí comienzan los colores de botones según tipo */
+/* Here the button colors start according to type */
 .normal {
     background-color: var(--type-normal);
     color: var(--clr-black);
