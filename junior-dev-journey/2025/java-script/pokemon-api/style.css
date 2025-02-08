@@ -72,8 +72,9 @@ header {
     background-color: var (--clr-gray);
     padding: .5rem;
     border-radius: 100vmax;
-    cursor: pointer;
+    cursor: pointer; /* It is useful to show that it is clickable */
     text-transform: uppercase;
+    font-wight: 600;
 }
 
 /* Here the button colors start according to type */
