@@ -53,6 +53,7 @@ body {
 
 header {
     padding-block: 1rem;
+    box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, .5); /* its useful for give shadow box opacity */
 }
 
 .nav{
@@ -60,6 +61,7 @@ header {
     flex-direction: column;
     gap: 1rem;
     align-items: flex-start;
+    padding-inline: 1rem;
 }
 
 .nav-list {
@@ -67,6 +69,7 @@ header {
     align-items: center;
     flex-wrap: wrap;  /* It is useful in case the images stand out and if they do, they can adapt to the space */
     gap: .5rem;
+}   
 
 .btn-header {
     background-color: var (--clr-gray);
@@ -75,6 +78,36 @@ header {
     cursor: pointer; /* It is useful to show that it is clickable */
     text-transform: uppercase;
     font-wight: 600;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .25); /* It is useful to give a shadow effect / .25 help to not be completed black */
+    transition:  .2s;
+}
+
+.btn-header:hover {
+    transform: scale(1.1) /* It is useful to give a zoom effect */
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .25);
+}
+
+main {
+    padding: 2rem;
+} 
+
+.pokemon-alls {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); /* It is useful to adapt the size of the images to the screen */
+    gap: 1rem;
+}
+
+.pokemon {
+    border-radius: 1rem;
+    background-color: var(--clr-white);
+    box-shadow: 0 0 3rem -1 rem rgba(0, 0, 0, .25);
+    padding-block: 1rem;
+    text-transform: uppercase;
+}
+
+.pokemon-img img{
+    width: 100%
+    max-width: 6rem
 }
 
 /* Here the button colors start according to type */
