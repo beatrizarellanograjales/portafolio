@@ -115,7 +115,7 @@ main {
     transform: translateX(-50%);
     font-size: 6rem;
     font-weight: 800;
-    color: var (--clr-gray);
+    color: var(--clr-gray);
     z-index: -1;
 }
 
