@@ -93,7 +93,7 @@ main {
 
 .pokemon-alls {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); /* It is useful to adapt the size of the images to the screen */
+    grid-template-columns: 1fr 1fr; /* It is useful to adapt the size of the images to the screen */
     gap: 1rem;
 }
 
@@ -103,12 +103,50 @@ main {
     box-shadow: 0 0 3rem -1 rem rgba(0, 0, 0, .25);
     padding-block: 1rem;
     text-transform: uppercase;
+    position: relative;
+    isolation:isolate; /* It is useful to isolate the element from the rest of the page */
+    overflow: hidden; /* It is useful to hide the overflow of the element */
+}
+
+.pokemon-id-back{
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 6rem;
+    font-weight: 800;
+    color: var (--clr-gray);
+    z-index: -1;
+}
+
+.pokemon-img {
+    passing-inline: 1rem;
+    diplay: flex;
+    justify-content:center;
 }
 
 .pokemon-img img{
-    width: 100%
-    max-width: 6rem
+    width: 100%;
+    max-width: 6rem;
 }
+
+
+.pokemon-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-items:center;
+    text-align: center;
+}
+
+.name-container {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    flex-wrap: wrap;
+    justify-content:center
+}
+
 
 /* Here the button colors start according to type */
 .normal {
