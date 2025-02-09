@@ -61,7 +61,9 @@ header {
     flex-direction: column;
     gap: 1rem;
     align-items: flex-start;
-    padding-inline: 1rem;
+    padding-inline: 2 rem; /* It is used to align the cards according to the device */
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .nav-list {
@@ -89,11 +91,13 @@ header {
 
 main {
     padding: 2rem;
+    max-width: 1000pxn;
+    margin-inline: 0 auto;  /* Zero is for up and down and auto is for centering */
 } 
 
 .pokemon-alls {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* It is useful to adapt the size of the images to the screen */
+    grid-template-columns: 1fr; /* It is useful to adapt the size of the images to the screen */
     gap: 1rem;
 }
 
