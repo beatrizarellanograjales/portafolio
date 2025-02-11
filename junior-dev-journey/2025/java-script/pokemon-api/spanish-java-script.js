@@ -16,7 +16,7 @@ function mostrarPokemon(poke) {
 
 /* -------  */
 
-
+    // let tipos = poke.types.map((type) => `<p class="${type.type.name} tipo">${type.type.name}</p>`).join('');
 
     let pokeId = poke.id.toString();
     if (pokeId.length === 1) {
