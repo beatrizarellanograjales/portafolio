@@ -1,17 +1,22 @@
-const listaPokemon = document.querySelector("#listaPokemon");
-const botonesHeader = document.querySelectorAll(".btn-header");
+const listPokemon = document.querySelector("#listPokemon");  
 let URL = "https://pokeapi.co/api/v2/pokemon/";
 
-for (let i = 1; i <= 151; i++) {
-    fetch(URL + i)
-        .then((response) => response.json())
-        .then(data => mostrarPokemon(data))
+for (let i = 1; i <= 151; i++) { 
+    fetch(URL + i)   
+        .then((response) => response.json())   
+        .then(data => mostrarPokemon(data));
 }
 
-function mostrarPokemon(poke) {
+/*  A CONTINUACIÓN:  Esta línea de código genera dinámicamente una imagen para cada Pokémon
+utilizando los datos de la API de PokeAPI. Se asegura de que cada Pokémon
+tenga su propia imagen y su nombre como alternativa en caso de error. */
 
-    let tipos = poke.types.map((type) => `<p class="${type.type.name} tipo">${type.type.name}</p>`);
-    tipos = tipos.join('');
+function mostrarPokemon(poke) {  
+    let tipos = poke.types.map((type) => `<p class="${type.type.name} tipo">${type.type.name}</p>`).join('');
+
+/* -------  */
+
+
 
     let pokeId = poke.id.toString();
     if (pokeId.length === 1) {
@@ -19,7 +24,6 @@ function mostrarPokemon(poke) {
     } else if (pokeId.length === 2) {
         pokeId = "0" + pokeId;
     }
-
 
     const div = document.createElement("div");
     div.classList.add("pokemon");
@@ -40,30 +44,7 @@ function mostrarPokemon(poke) {
                 <p class="stat">${poke.height}m</p>
                 <p class="stat">${poke.weight}kg</p>
             </div>
-        </div>
+        </div>    
     `;
-    listaPokemon.append(div);
+    listPokemon.append(div);
 }
-
-botonesHeader.forEach(boton => boton.addEventListener("click", (event) => {
-    const botonId = event.currentTarget.id;
-
-    listaPokemon.innerHTML = "";
-
-    for (let i = 1; i <= 151; i++) {
-        fetch(URL + i)
-            .then((response) => response.json())
-            .then(data => {
-
-                if(botonId === "ver-todos") {
-                    mostrarPokemon(data);
-                } else {
-                    const tipos = data.types.map(type => type.type.name);
-                    if (tipos.some(tipo => tipo.includes(botonId))) {
-                        mostrarPokemon(data);
-                    }
-                }
-
-            })
-    }
-}))
