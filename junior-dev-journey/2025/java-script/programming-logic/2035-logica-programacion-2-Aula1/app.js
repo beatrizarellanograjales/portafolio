@@ -9,7 +9,7 @@ parrafo.innerHTML = 'Adivina el número secreto entre 1 y 10'; // Cambiamos el c
 //let parrafo = document.querySelector('texto_parrafo'); // Seleccionamos el primer elemento <p> del documento y lo almacenamos en la variable 'parrafo'
 //parrafo.innerHTML = 'Adivina el número secreto entre 1 y 10'; // Cambiamos de la clase
 
- 
+// la funcioón es una encapsulación de una acción que queremos que la función realice 
 function intentoDeUsuario () {
     alert('click desde el botón'); // 
 }
