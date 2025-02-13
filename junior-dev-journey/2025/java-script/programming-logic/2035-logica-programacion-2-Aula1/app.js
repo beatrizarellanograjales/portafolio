@@ -10,3 +10,4 @@ parrafo.innerHTML = 'Adivina el número secreto entre 1 y 10'; // Cambiamos el c
 //parrafo.innerHTML = 'Adivina el número secreto entre 1 y 10'; // Cambiamos de la clase
 
  
+funtion intentoDeUsuario () {
