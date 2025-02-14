@@ -4,7 +4,8 @@ let URL = "https://pokeapi.co/api/v2/pokemon/";
 for (let i = 1; i <= 151; i++) { 
     fetch(URL + i)   
         .then((response) => response.json())   
-        .then(data => mostrarPokemon(data));
+        .then(data => console.log(data));
+        /* .then(data => mostrarPokemon(data)); */
 }
 
 /*  A CONTINUACIÓN:  Esta línea de código genera dinámicamente una imagen para cada Pokémon
