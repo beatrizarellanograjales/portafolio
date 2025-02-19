@@ -13,8 +13,14 @@ function verificarIntento() {
     let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
     
     if (numeroDeUsuario === numeroSecreto) {
-        console.log('Acertaste el número!');
-    } 
+        
+    } else
+        if  (numeroDeUsuario > numeroSecreto) {
+        asignarTextoElemento('p',`El número secreto es menor a ${numeroDeUsuario}`);
+    } else {
+        asignarTextoElemento('p',`El número secreto es mayor a ${numeroDeUsuario}`);
+    }
+    
     return;
 }
 
