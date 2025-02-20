@@ -15,7 +15,7 @@ function verificarIntento() {
     console.log(intentos);
     
     if (numeroDeUsuario === numeroSecreto) {
-        
+        asignarTextoElemento('p',`¡Felicidades! Has adivinado el número secreto en ${intentos} intentos.`);
     } else
         if  (numeroDeUsuario > numeroSecreto) {
         asignarTextoElemento('p',`El número secreto es menor a ${numeroDeUsuario}`);
