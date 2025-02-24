@@ -60,7 +60,7 @@ body{
       /* background-color: #22D4FD; */
       display: flex;
       justify-content: center;
-      gap: 16px;
+      gap: 16px; /* para poner un espacio entre el icono y la letra en el boton de la red social*/
       border: 2px solid #22D4FD;
       width: 378px;
       text-align: center;
@@ -73,6 +73,24 @@ body{
       font-family: 'Montserrat', sans-serif;
 }
 
-.presentacion__enlaces__link:hover{
-    background-color: #272727;
+/* .presentacion__enlaces__link:hover{ /* para que cuando pongamos el mouse en los botones cambie de color */
+   /* background-color: #272727; */
+
+/* Hover Personalizados */
+.github__enlaces__link:hover {
+    background-color: #6e5494; /* Morado GitHub */
+    transform: scale(1.05);
 }
+
+.linkedin__enlaces__link:hover {
+    background-color: #0077b5; /* Azul LinkedIn */
+    transform: translateX(5px);
+}
+
+.switch__enlaces__link:hover {
+    background-color: #ffcc00; /* Amarillo Switch */
+    border-radius: 50px;
+    transform: rotate(5deg); /* se agrega una rotación  cuando pasan el mouse en el cuadrito*/
+}   
+
+
