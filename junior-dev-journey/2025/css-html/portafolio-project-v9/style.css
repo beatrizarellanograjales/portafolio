@@ -13,13 +13,30 @@ body{
     color: #F6F6F6;
 }
 
+.header{
+    padding: 2% 0% 0% 15% ;
+
+}
+
+.header__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link{
+    font-family:'montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color:#22D4FD;
+}
 
 .titulo-destaque {
     color: #22D4FD; ;
 }
 
 .presentacion {
-    margin: 10% 15%;
+    /* margin: 10% 15%; */
+    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -98,7 +115,14 @@ body{
     padding: 24px;
     color:#000000;
     text-align: center;
+    text-decoration: none !important; /* ❌ Elimina el subrayado */
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: bold;
+    /*font-weight: 400;*/
 }	
+.footer__link:hover{
+    color: #ffcc00;
+    text-decoration: none !important; /* ❌ Elimina el subrayado */
+    font-family: 'Montserrat', sans-serif;
+}
