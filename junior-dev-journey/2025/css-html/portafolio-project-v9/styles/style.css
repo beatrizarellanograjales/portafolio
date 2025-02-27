@@ -1,34 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
-
 :root{
-
-    /* incorporamos las vasriables CSS de los colores las vasriables CSS utilizadas*/
-    --color-primario:#000000;
-    -o-animation: #F6F6F6;
-    --color-secundario:#22D4FD;
-
-    /* incorporamos las vasriables CSS de la tipografía las vasriables CSS utilizadas*/
+    /* Variables CSS */
+    --color-primario: #AC1754;
+    --color-secundario: #E53888;
+    --color-terciario: #F37199;
+    --color-texto: #22D4FD;
     --fuente-montserrat: 'Montserrat', sans-serif;
     --fuente-krona: 'Krona One', sans-serif;
-
 }
 
 * {
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
 body{
-   /* height: 100vh; */
+    /* height: 100vh; */
     box-sizing: border-box;
-    background-color: #000000;
-    color: #F6F6F6;
+    background-color: var(--color-primario);
+    color: var(--color-texto);
 }
 
 .header{
-    padding: 2% 0% 0% 15% ;
-
+    padding: 2% 0% 0% 15%;
 }
 
 .header__menu{
@@ -37,15 +32,15 @@ body{
 }
 
 .header__menu__link{
-    font-family:'montserrat', sans-serif;
+    font-family: var(--fuente-montserrat);
     font-size: 24px;
     font-weight: 600;
-    color:#22D4FD;
-    text-decoration: none; /* ❌ Elimina el subrayado o cualquier decoración */
+    color: var(--color-secundario);
+    text-decoration: none;
 }
 
 .titulo-destaque {
-    color: #22D4FD; ;
+    color: var(--color-secundario);
 }
 
 .presentacion {
@@ -65,12 +60,12 @@ body{
 
 .presentacion__contenido__titulo{
     font-size: 36px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fuente-krona);
 }
 
 .presentacion__contenido__texto{
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fuente-montserrat);
 }
 
 .presentacion__enlaces{
@@ -82,30 +77,26 @@ body{
 }
 
 .presentacion__enlaces__subtitulo{
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fuente-krona);
     font-weight: 400;
     font-size: 24px;
 }
 
 .presentacion__enlaces__link{
-      /* background-color: #22D4FD; */
-      display: flex;
-      justify-content: center;
-      gap: 16px; /* para poner un espacio entre el icono y la letra en el boton de la red social*/
-      border: 2px solid #22D4FD;
-      width: 378px;
-      text-align: center;
-      border-radius: 8px;
-      font-size: 24px;
-      font-weight: 600;
-      padding: 21.5px 0;
-      text-decoration: none;
-      color: #F6F6F6;
-      font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--color-secundario);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--color-texto);
+    font-family: var(--fuente-montserrat);
 }
-
-/* .presentacion__enlaces__link:hover{ /* para que cuando pongamos el mouse en los botones cambie de color */
-   /* background-color: #272727; */
 
 /* Hover Personalizados */
 .github__enlaces__link:hover {
@@ -121,22 +112,22 @@ body{
 .switch__enlaces__link:hover {
     background-color: #ffcc00; /* Amarillo Switch */
     border-radius: 50px;
-    transform: rotate(5deg); /* se agrega una rotación  cuando pasan el mouse en el cuadrito*/
-}   
+    transform: rotate(5deg);
+}
 
 .footer {
-    background-color: #22D4FD;
+    background-color: var(--color-secundario);
     padding: 24px;
-    color:#000000;
+    color: var(--color-primario);
     text-align: center;
-    text-decoration: none !important; /* ❌ Elimina el subrayado */
-    font-family: 'Montserrat', sans-serif;
+    text-decoration: none !important;
+    font-family: var(--fuente-montserrat);
     font-size: 24px;
     font-weight: bold;
-    /*font-weight: 400;*/
-}	
+}
+
 .footer__link:hover{
     color: #ffcc00;
-    text-decoration: none !important; /* ❌ Elimina el subrayado */
-    font-family: 'Montserrat', sans-serif;
+    text-decoration: none !important;
+    font-family: var(--fuente-montserrat);
 }
