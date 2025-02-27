@@ -11,7 +11,7 @@
     });
 }); */
 
-document.addEventListener('DOMContentLoaded', function() {
+/* document.addEventListener('DOMContentLoaded', function() {
     const imagenes = document.querySelectorAll('.contenedor__imagenes__div');
 
     imagenes.forEach(imagen => {
@@ -22,6 +22,21 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             // Aplicar el filtro de color solo a la imagen seleccionada
             this.style.filter = 'grayscale(0%)';
+        });
+    });
+}); */
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const imagenes = document.querySelectorAll('.contenedor__imagenes__div');
+
+    imagenes.forEach(imagen => {
+        imagen.addEventListener('click', () => {
+            // Restablecer el filtro en todas las imágenes
+            imagenes.forEach(img => img.style.filter = 'grayscale(100%)');
+
+            // Aplicar color solo a la imagen seleccionada
+            imagen.style.filter = 'grayscale(0%)';
         });
     });
 });
