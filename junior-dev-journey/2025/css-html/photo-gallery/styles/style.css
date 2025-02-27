@@ -1,0 +1,87 @@
+
+
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    padding: 2% 0% 0% 15%;
+}
+
+.header__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link {
+    font-family: var(--fuente-montserrat);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-primario);
+    text-decoration: none;
+}
+
+.actividad__instruciones {
+    text-align: center; /* Centrar */
+}
+
+.contenedor__imagenes {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* grid-template-rows: repeat(2, 1fr); */
+    gap: 0; /* elimina espacios entre imagenes */
+    width: 1100vw;
+    max-width: 1900px;
+    height: auto;
+    margin: 20px auto; /* Centrar */
+    padding: 20px;
+    border: 10px solid #white; /* Borde del frame */
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5)
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 600px) {
+    .contenedor__imagenes {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+}
+
+.contenedor__imagenes__div {
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    justify-content: center;  /* Centrar horizontalmente */
+    align-items: center;  /* Centrar verticalmente */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: filter .35s linear;
+}
+
+.contenedor__imagenes__div:hover {
+font: filter: grayscale(0%);
+}
+
+.footer {
+    background-color: var(--color-secundario);
+    padding: 24px;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 24px;
+    font-weight: bold;
+}
