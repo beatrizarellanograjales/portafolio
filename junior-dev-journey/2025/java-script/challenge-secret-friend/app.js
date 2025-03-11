@@ -26,7 +26,7 @@ function agregarAmigo() {
     }
 
     // si la persona escribe simbolos raros y especiales
-    if (/[!@#$%^&*(),.?":{}|<>]/.test(nombre)) {
+    if (/[!@#\$%^&*(),.?":{}|<>\-\+]/.test(nombre)) {
         alert("No se permiten símbolos especiales.");
         return;
     }
