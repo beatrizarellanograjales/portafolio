@@ -33,7 +33,7 @@ function agregarAmigo() {
 
      // si la persona quiere escrirbir un nombre muy corto 
      if (nombre.length < 2) {
-        alert("El nombre debe tener al menos 3 letras.");
+        alert("El nombre debe tener al menos 2 letras.");
         return;
     }
 
