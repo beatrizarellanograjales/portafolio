@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    /* Variables CSS */
+    --color-primario: #AC1754;
+    --color-secundario: #E53888;
+    --color-terciario: #F37199;
+    --color-texto: #22D4FD;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+    --fuente-krona: 'Krona One', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+}
+
+.header__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link{
+    font-family: var(--fuente-montserrat);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+.titulo-destaque {
+    color: var(--color-secundario);
+}
+
+.presentacion {
+    /* margin: 10% 15%; */
+    padding: 6% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentacion__contenido{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion__contenido__titulo{
+    font-size: 36px;
+    font-family: var(--fuente-krona);
+}
+
+.presentacion__contenido__texto{
+    font-size: 24px;
+    font-family: var(--fuente-montserrat);
+}
+
+.presentacion__enlaces{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion__enlaces__subtitulo{
+    font-family: var(--fuente-krona);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.presentacion__enlaces__link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--color-secundario);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--color-texto);
+    font-family: var(--fuente-montserrat);
+}
+
+/* Hover Personalizados */
+.github__enlaces__link:hover {
+    background-color: #6e5494; /* Morado GitHub */
+    transform: scale(1.05);
+}
+
+.linkedin__enlaces__link:hover {
+    background-color: #0077b5; /* Azul LinkedIn */
+    transform: translateX(5px);
+}
+
+.switch__enlaces__link:hover {
+    background-color: #ffcc00; /* Amarillo Switch */
+    border-radius: 50px;
+    transform: rotate(5deg);
+}
+
+.footer {
+    background-color: var(--color-secundario);
+    padding: 24px;
+    color: var(--color-primario);
+    text-align: center;
+    text-decoration: none !important;
+    font-family: var(--fuente-montserrat);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer__link:hover{
+    color: #ffcc00;
+    text-decoration: none !important;
+    font-family: var(--fuente-montserrat);
+}
