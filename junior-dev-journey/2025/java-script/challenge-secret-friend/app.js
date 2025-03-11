@@ -13,13 +13,21 @@ while (true) {
         break;
     }
 
-    // Si el usuario no escribe nada, pedimos de nuevo
+    // Si el usuario no escribe nada o solo pone espacios , pedimos de nuevo
     if (nombre.trim() === "") {
         alert("Por favor, escribe un nombre válido.");
         continue;
     }
 
-    // Agregamos el nombre al array
+    // Validación para detectar números en el nombre
+    const contieneNumeros = /\d/.test(nombre); // Esto busca cualquier dígito del 0 al 9
+
+    if (contieneNumeros) {
+        alert("Solo se aceptan letras, no números.");
+        continue; // vuelve al inicio del bucle
+    }
+
+    // Agregamos el nombre al array solo si pasa las validaciones
     amigos.push(nombre);
 }
 
