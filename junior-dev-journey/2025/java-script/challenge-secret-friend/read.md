@@ -38,27 +38,12 @@ Una vez sorteado, el nombre **se eliminará automáticamente de la lista** para 
 
 ## 💡 Recomendaciones
 - Antes de empezar el sorteo, asegúrate de que **todos los nombres estén correctamente escritos**.
-- Si quieres reiniciar el juego, **refresca la página** o agrega una función de reinicio en el código.
-
+- Si quieres reiniciar el juego, **refresca la página** 
 ---
 
 ## 🚀 Tecnologías Utilizadas
 - HTML5
 - CSS3
-- JavaScript Vanilla (sin frameworks)
+- JavaScript 
 
 ---
-
-## 🎨 Vista del Proyecto
-Si deseas personalizar los estilos, puedes modificar el archivo `style.css` para cambiar los colores, botones y diseño general.
-
----
-
-## 💻 Código de ejemplo
-
-### HTML
-```html
-<input type="text" id="amigo" placeholder="Escribe un nombre">
-<button onclick="agregarAmigo()">Añadir</button>
-<ul id="listaAmigos"></ul>
-<button onclick="sortearAmigo()">Sortear amigo</button>
